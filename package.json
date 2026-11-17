@@ -1,0 +1,32 @@
+{
+    "name": "autopost",
+    "description": "Share Quotes Dose content to social media automatically.",
+    "version": "1.0.0",
+    "private": true,
+    "homepage": "https://github.com/quotesdose/autopost",
+    "bugs": "https://github.com/quotesdose/autopost/issues",
+    "license": "GPL-3.0",
+    "author": {
+        "name": "Quotes Dose",
+        "email": "quotesdose@proton.me",
+        "url": "https://quotesdose.pages.dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/quotesdose/autopost.git"
+    },
+    "scripts": {
+        "setup": "scripts/setup.sh",
+        "clean": "scripts/clean.sh",
+        "format": "scripts/format.sh",
+        "post": "scripts/post.sh"
+    },
+    "devDependencies": {
+        "@atproto/api": "^0.31.2",
+        "dotenv": "^18.0.10",
+        "husky": "^9.1.7",
+        "masto": "^8.0.1",
+        "prettier": "^3.10.1"
+    },
+    "type": "module"
+}
