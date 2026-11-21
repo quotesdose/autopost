@@ -5,7 +5,10 @@ const content = {
         `"${quote.text}"`,
         `— ${quote.author.name}`,
         "",
-        ["#Quotes", ...quote.tags.map((tag) => `#${tag.name.replaceAll(" ", "").replaceAll("-", "")}`)].join(" ")
+        [
+            "#Quotes",
+            ...quote.tags.map((tag) => `#${tag.name.replaceAll(" ", "").replaceAll("-", "")}`)
+        ].join(" ")
     ].join("\n"),
     image: new Object()
 }
