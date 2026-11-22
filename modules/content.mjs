@@ -10,7 +10,12 @@ const content = {
             ...quote.tags.map((tag) => `#${tag.name.replaceAll(" ", "").replaceAll("-", "")}`)
         ].join(" ")
     ].join("\n"),
-    image: new Object()
+    quote: [`"${quote.text}"`, `— ${quote.author.name}`].join("\n"),
+    tags: ["Quotes"].concat(
+        quote.tags.map((tag) => `${tag.name.replaceAll(" ", "").replaceAll("-", "")}`)
+    ),
+    image: new Object(),
+    url: "https://quotesdose.pages.dev" + quote.permalink
 }
 
 for (const [key, value] of Object.entries(quote.image)) {

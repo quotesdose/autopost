@@ -5,6 +5,7 @@ post() {
         "platforms/bluesky.js"
         "platforms/mastodon.js"
         "platforms/pixelfed.js"
+        "platforms/tumblr.js"
     )
 
     arguments=(
