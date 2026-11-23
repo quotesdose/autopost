@@ -6,6 +6,7 @@ post() {
         "platforms/mastodon.js"
         "platforms/pixelfed.js"
         "platforms/tumblr.js"
+        "platforms/substack.js"
     )
 
     arguments=(

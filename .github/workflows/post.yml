@@ -5,7 +5,7 @@ on:
         - cron: "17 8 * * *"
           timezone: "Africa/Casablanca"
         - cron: "47 15 * * *"
-          timezone: "Europe/Oslo"
+          timezone: "Africa/Casablanca"
     workflow_dispatch:
 
 jobs:
@@ -19,6 +19,7 @@ jobs:
             TUMBLR_CONSUMER_SECRET: ${{ secrets.TUMBLR_CONSUMER_SECRET }}
             TUMBLR_TOKEN_KEY: ${{ secrets.TUMBLR_TOKEN_KEY }}
             TUMBLR_TOKEN_SECRET: ${{ secrets.TUMBLR_TOKEN_SECRET }}
+            SUBSTACK_COOKIE_SID: ${{ secrets.SUBSTACK_COOKIE_SID }}
         steps:
             - name: Checkout repository
               uses: actions/checkout@v7
