@@ -48,17 +48,17 @@ import dayjs from "dayjs"
                         schemaVersion: "v1",
                         title: null
                     },
-                    content: [
-                        {
+                    content: quote.split("\n").map((line) => {
+                        return {
                             type: "paragraph",
                             content: [
                                 {
                                     type: "text",
-                                    text: quote
+                                    text: line
                                 }
                             ]
                         }
-                    ]
+                    })
                 },
                 attachmentIds: [attachment.id],
                 replyMinimumRole: "everyone"
